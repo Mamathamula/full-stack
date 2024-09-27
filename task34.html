@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table align="center" border="1px" width="600px">
+        <tr>
+            <td>Salary</td>
+            <td>Tax amount</td>
+            <td>Take home salary</td>
+        </tr>
+        <tr>
+            <td id="salary"></td>
+            <td id="tax"></td>
+            <td id="home"></td>
+        </tr>
+    </table>
+    <script>
+        var salary=prompt("enter your salary")
+        document.getElementById("salary").innerHTML=salary
+       
+        var tax=salary*5/100
+        var taxx=salary*8/100
+        var taxi=salary*10/100
+ 
+        var home=salary-tax
+        var take=salary-taxx
+        var takehome=salary-taxi
+        if(salary>=30000 && salary<=40000)
+        {
+            document.getElementById("tax").innerHTML=tax
+            document.getElementById("home").innerHTML=home
+        }
+         else if(salary>40000 && salary<=50000)
+        {
+            document.getElementById("tax").innerHTML=taxx
+            document.getElementById("home").innerHTML=take
+        }
+         else if(salary>=50000)
+        {
+            document.getElementById("tax").innerHTML=taxi
+            document.getElementById("home").innerHTML=takehome
+        }
+       
+    </script>
+</body>
+</html>

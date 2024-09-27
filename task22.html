@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="name"></h1>
+    <select onchange="Demo()" id="course" >
+        <option >hyderabad</option>
+        <option>delhi</option>
+        <option>banglore</option>
+        <option>ap</option>
+        <option>kadapa</option>
+        
+
+    </select>
+    <script>
+        function Demo(){
+            let a=['charminar','bb','cc']
+            let b=['banglore1','banglore2']
+            let c=['ap1','ap2','ap3']
+            let d=['kadapa1','kadapa2','kadapa3']
+         let change=document.getElementById("course").value;
+         
+          if(change=='delhi'){
+          document.getElementById("name").innerHTML="you selected "+"<span style='color:red;'>"+a+"</span> course";
+           
+          
+        }else if(change=="banglore"){
+            document.getElementById("name").innerHTML="you selected "+"<span style='color:red;'>"+b+"</span> course";
+        }else if(change=="ap"){
+            document.getElementById("name").innerHTML="you selected "+"<span style='color:red;'>"+c+"</span> course";
+        }else if(change=="kadapa"){
+            document.getElementById("name").innerHTML="you selected "+"<span style='color:red;'>"+c+"</span> course";
+        }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="name"></h1>
+    <select onchange="Demo()" id="course" >
+        <option >hyderabad</option>
+        <option>banglore</option>
+        <option>chenni</option>
+        <option>ap</option>
+        <option>telangana</option>
+         </select>
+<script>
+        function Demo(){
+           let change=document.getElementById("course").value;
+           document.getElementById("name").innerHTML="you selected "+"<span style='color:red;'>"+change+"</span> course";
+        }
+    </script>
+</body>
+</html>

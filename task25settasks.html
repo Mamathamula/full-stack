@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="bg">
+  
+        <script>
+           
+            
+//const demo=()=>{
+               // document.getElementById("bg").innerHTML="yellow";
+           // }
+           // setInterval('demo()',1000) 
+           // setTimeout(function(){
+              //let a=document.getElementById("bg").style.background="red"
+                // document.getElementById("bg").style.background="yellow"+a;
+            //},1000)
+
+            const Demo=()=>{
+                var a= document.getElementById("bg")
+         if(a.style.background==""){
+       document.getElementById("bg").style.background="yellow"
+    } else if(document.getElementById("bg").style.background=="yellow"){
+        document.getElementById("bg").style.background="red"
+    }else if(document.getElementById("bg").style.background=="red"){
+        document.getElementById("bg").style.background="yellow"
+    }
+
+}
+   setInterval('Demo()',2000)
+    
+
+
+
+
+
+        </script>
+</body>
+</html>
+
+

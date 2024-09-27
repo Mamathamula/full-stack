@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color:red;
+            text-align: center;
+            box-shadow: 4px 6px 9px black;
+            background-color: beige;
+        }
+        h1:hover{
+           background-color: chartreuse;
+           color: black;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 id="txt"></h1>
+   
+    <script>
+        let x=prompt('enter a message')
+        let y=x.length
+        if (y<=100){
+            document.getElementById('txt').innerHTML=x
+        } else{
+            document.getElementById('txt').innerHTML="error"
+        }
+    </script>
+</body>
+</html>

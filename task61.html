@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="info"></h1>
+   
+    <script>
+         let a=alert('There are 3 Questions ')
+         let total=0
+ 
+         let c1=['Red','Green','Yellow']
+         let c2=['Red','Green','Yellow']
+         let c3=['Red','White','Yellow']  
+ 
+        let x = prompt("What is the color of banana\n(a)"+c1[0]+"\n(b)"+c1[1]+"\n(c)"+c1[2])
+        let y = prompt("What is the color of apple\n(a)"+c2[0]+"\n(b)"+c2[1]+"\n(c)"+c2[2])
+        let z = prompt("What is the color of sky\n(a)"+c3[0]+"\n(b)"+c3[1]+"\n(c)"+c3[2])
+   
+if(x=="c"){
+//    document.getElementById('info').innerHTML=colors+" is Correct"
+alert("Correct")
+     total++
+}
+else{
+    // document.getElementById('info').innerHTML="Wrong"
+    alert("Wrong")
+}
+if(y=="a"){
+//    document.getElementById('info').innerHTML=colors1+" is Correct"
+alert("Correct")
+   total++
+}
+else{
+    // document.getElementById('info').innerHTML="Wrong"
+    alert("Wrong")
+}
+if(z=="b"){
+//    document.getElementById('info').innerHTML=colors2+" is Correct"
+alert("Correct")
+ 
+   total++
+ 
+}
+else{
+    // document.getElementById('info').innerHTML="Wrong"
+    alert("Wrong")
+}
+ 
+alert('your score is'+total+"/3")
+ 
+    </script>
+</body>
+</html>

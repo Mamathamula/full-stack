@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: linear-gradient( white,#acf6f7);
+            font-family: Arial, sans-serif;
+        }
+ 
+        .calculator {
+            width: 320px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+ 
+        #screen {
+            width: calc(100% - 12px);
+            padding: 10px;
+            font-size: 1.5em;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            text-align: right;
+            background-color: #e0e0e0;
+        }
+ 
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+ 
+        .buttons input[type="button"],
+        .buttons input[type="reset"] {
+            padding: 20px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+ 
+        .buttons input[type="reset"] {
+            background-color: black;
+            grid-column: span 2;
+        }
+ 
+        .buttons input[type="button"]:hover,
+        .buttons input[type="reset"]:hover {
+            background-color: black;
+        }
+ 
+        .buttons input[type="reset"]:hover {
+            background-color:black;
+        }
+ 
+        .buttons .zero {
+            grid-column: span 2; /* Span the zero button across two columns */
+        }
+    </style>
+</head>
+ 
+<body>
+   
+    <div class="calculator">
+        <input type="text" id="screen" readonly>
+        <br>
+        <div class="buttons">
+            <input type="button" value="1" onclick="demo(1)">
+            <input type="button" value="2" onclick="demo(2)">
+            <input type="button" value="3" onclick="demo(3)">
+            <input type="button" value="+" onclick="demo('+')">
+ 
+            <input type="button" value="4" onclick="demo(4)">
+            <input type="button" value="5" onclick="demo(5)">
+            <input type="button" value="6" onclick="demo(6)">
+            <input type="button" value="-" onclick="demo('-')">
+ 
+            <input type="button" value="7" onclick="demo(7)">
+            <input type="button" value="8" onclick="demo(8)">
+            <input type="button" value="9" onclick="demo(9)">
+            <input type="button" value="*" onclick="demo('*')">
+ 
+            <input type="button" value="0" class="zero" onclick="demo('0')">
+            <input type="button" value="." onclick="demo('.')">
+            <input type="button" value="⌫" onclick="backspace()">
+            <input type="reset" value="Clear" onclick="clearScreen()">
+            <input type="button" value="/" onclick="demo('/')">
+            <input type="button" value="=" onclick="calculate()">
+        </div>
+    </div>
+    <script>
+        function demo(value) {
+            document.getElementById('screen').value += value;
+        }
+ 
+        function calculate() {
+           
+                document.getElementById('screen').value = eval(document.getElementById('screen').value);
+       
+        }
+ 
+        function clearScreen() {
+            document.getElementById('screen').value = '';
+        }
+ 
+        function backspace() {
+            let screen = document.getElementById('screen');
+           screen.value = screen.value.slice(0, -1);
+        }
+    </script>
+</body>
+ 
+</html>
+ 

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 align="center">getelementsbytagname</h1>
+    <p>first para</p>
+    <p>second para</p>
+    <p>third para</p>
+
+    <h1 class="txt">first para</h1>
+    <h1 class="txt">second para</h1>
+    <h1 class="txt">third para</h1>
+
+    <h1 class="txt">first para</h1>
+
+    <button onclick="Demo()">change</button>
+    <script>
+        const Demo=()=>{
+            document.querySelector('p').style.color="red"
+            document.querySelector('.txt').style.color="green"
+             document.querySelector('#txt1').style.color="yellow"
+        }
+    </script>
+</body>
+</html>

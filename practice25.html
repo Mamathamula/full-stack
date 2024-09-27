@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="ten">
+    <p id="two">multiple ternanry</p>
+    <h1 id="demo"></h1>
+    <script>
+        let marks=prompt('marks');
+        let result=(marks < 40)?"unstisfactor":
+                   (marks <60)?'average':
+                   (marks<80)?'good':'execellent';
+                   document.getElementById('two').innerHTML=marks
+                   document.getElementById('demo').innerHTML=result
+            if(result=="unstisfactor"){
+                  document.getElementById('ten').style.background='red'
+            }else if(result=='average'){
+                  document.getElementById('ten').style.background='skyblue'
+            }else if(result=='good'){
+                  document.getElementById('ten').style.background='yellow'
+            }else{
+                 document.getElementById('ten').style.background='green'
+            }
+    </script>
+</body>
+</html>

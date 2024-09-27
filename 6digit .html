@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function generateOTP() {
+        // Generate a random number between 100000 and 999999
+        const otp = Math.floor(100000 + Math.random() * 900000);
+        return otp;
+      }
+      
+     
+      const otp = generateOTP();
+      document.write(otp);
+    </script>
+      
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var Promise=new Promise((resolve,reject)=>{
+            var x="javascript"
+             var y="javascript123"
+        //x and y same values are resolve
+        //x and y any one are different values are rejected
+        if(x===y){
+            resolve()
+        }else{
+            rejected()
+        }
+        })
+        Promise.then(()=>{
+            console.log("valid")
+        })
+        .catch(()=>{
+            console.log("invalid")
+        })
+    </script>
+</body>
+</html>

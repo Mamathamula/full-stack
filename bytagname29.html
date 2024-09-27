@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 align="center">getelementsbytagname</h1>
+    <p>first para</p>
+    <p>second para</p>
+    <p>third para</p>
+    <button onclick="Demo()">redcolor</button>
+    <script>
+        const Demo=()=>{
+        let data=document.getElementsByTagName("p")
+        data[0].innerHTML="hello world"
+        data[1].innerHTML="java script"
+       data[0].style.color="red"
+    
+    }
+
+    </script>
+</body>
+</html>

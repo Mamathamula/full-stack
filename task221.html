@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="b">
+   <h3 id="txt">mamatha mula</h3>
+    <select  id="one" onchange="Demo()">
+        <option value="red">red</option>
+        <option value="green">green</option>
+        <option value="blue">blue</option>
+    </select>
+    <script>
+        function Demo(){
+            let a=document.getElementById('one').value
+            document.getElementById('txt').style.color=a
+           // document.getElementById('b').style.backgroundColor=a
+        }
+    </script>
+</body>
+</html>

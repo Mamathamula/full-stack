@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Quiz</title>
+</head>
+<body>
+    <script>
+        var questions= [
+            {
+                prompt: "What is your name?\n(a)mamatha\n(b)radha\n(c)mercy\n",
+                answer: "a"
+            },
+            {
+                prompt: "What is your faviourite color?\n(a)red\n(b)white\n(c)yellow\n",
+                answer: "b"
+            },
+            {
+                prompt: "What is your habbit?\n(a)dancing\n(b)watching\n(c)reading\n",
+                answer: "c"
+            }
+        ];
+ 
+       var score = 0;
+        alert( questions.length)
+       
+        for (var i = 0; i < questions.length; i++) {
+         var response= prompt(questions[i].prompt);
+         if(response==questions[i].answer){
+         score++;
+         alert("Correct!");
+         }else {
+                alert("Wrong");
+            }
+           
+        }
+ 
+        alert("you got " + score + " / " + questions.length);
+    </script>
+</body>
+</html>
+ 
+</body>
+</html>

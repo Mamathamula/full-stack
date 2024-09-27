@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="type"  id="one">
+    <br>
+    <input type="button" value="convert" id="sp" onclick="Demo()">
+    <script>
+        function Demo() {
+            let val = document.getElementById('one').value
+            if (val == "") {
+                alert("Field should not be empty")
+            }
+            else if (val == val.toUpperCase()) {
+                let val1 = document.getElementById('one').value = val.toLowerCase()
+            }
+            else if (val == val.toLowerCase()) {
+                let val1 = document.getElementById('one').value = val.toUpperCase()
+            }
+            else {
+                alert("enter a character")
+            }
+        }
+    </script>
+</body>
+</html>
